@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Luxury executive sedan rendered in fine gold linework">
+  <defs>
+    <radialGradient id="hg" cx="62%" cy="42%" r="85%">
+      <stop offset="0" stop-color="#2a251c"/>
+      <stop offset="48%" stop-color="#1a1610"/>
+      <stop offset="1" stop-color="#0b0a08"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9E6F1E"/>
+      <stop offset="0.45" stop-color="#C8982F"/>
+      <stop offset="0.75" stop-color="#E7C45F"/>
+      <stop offset="1" stop-color="#FBEFA8"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8982F" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#C8982F" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1600" height="900" fill="url(#hg)"/>
+
+  <!-- faint horizon lines -->
+  <g opacity="0.07" stroke="#C8982F" stroke-width="1">
+    <line x1="0" y1="635" x2="1600" y2="635"/>
+    <line x1="0" y1="690" x2="1600" y2="690"/>
+  </g>
+
+  <!-- ground shadow -->
+  <ellipse cx="880" cy="715" rx="560" ry="30" fill="#000" opacity="0.45"/>
+
+  <!-- ====== Luxury sedan, fine gold linework ====== -->
+  <g fill="none" stroke="url(#gold)" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round" opacity="0.92">
+    <!-- body -->
+    <path d="M360 600
+             C 380 520, 430 480, 520 470
+             C 575 410, 660 388, 800 388
+             C 980 388, 1090 410, 1160 470
+             C 1245 478, 1320 520, 1360 590
+             C 1372 614, 1366 632, 1342 636
+             L 392 636
+             C 366 632, 354 622, 360 600 Z"/>
+    <!-- roof / greenhouse -->
+    <path d="M560 470
+             C 600 416, 690 396, 800 396
+             C 930 396, 1030 416, 1090 470"/>
+    <!-- door line -->
+    <path d="M800 398 L 800 600" opacity="0.6"/>
+    <!-- window split -->
+    <path d="M800 470 L 800 398" opacity="0.5"/>
+    <!-- hood crease -->
+    <path d="M1160 472 C 1210 486, 1270 520, 1300 560" opacity="0.55"/>
+    <!-- rocker -->
+    <path d="M470 612 L 1270 612" opacity="0.45"/>
+  </g>
+
+  <!-- window glass tint -->
+  <path d="M572 468 C 610 420, 694 402, 798 402 L 798 466 Z" fill="url(#glass)"/>
+  <path d="M802 402 C 920 404, 1014 420, 1074 466 L 802 466 Z" fill="url(#glass)"/>
+
+  <!-- wheels -->
+  <g>
+    <circle cx="620" cy="630" r="74" fill="#080706" stroke="url(#gold)" stroke-width="3"/>
+    <circle cx="620" cy="630" r="40" fill="none" stroke="url(#gold)" stroke-width="1.4" opacity="0.7"/>
+    <circle cx="620" cy="630" r="15" fill="#1a1a1a" stroke="#9E6F1E" stroke-width="1.5"/>
+    <circle cx="1140" cy="630" r="74" fill="#080706" stroke="url(#gold)" stroke-width="3"/>
+    <circle cx="1140" cy="630" r="40" fill="none" stroke="url(#gold)" stroke-width="1.4" opacity="0.7"/>
+    <circle cx="1140" cy="630" r="15" fill="#1a1a1a" stroke="#9E6F1E" stroke-width="1.5"/>
+  </g>
+
+  <!-- headlight sparkle -->
+  <circle cx="1338" cy="556" r="5" fill="#FBEFA8"/>
+  <circle cx="1322" cy="566" r="3" fill="#E7C45F" opacity="0.8"/>
+
+  <!-- subtle ambient flecks -->
+  <g fill="#C8982F" opacity="0.5">
+    <circle cx="300" cy="250" r="2"/>
+    <circle cx="1300" cy="220" r="2.5"/>
+    <circle cx="1450" cy="400" r="1.8"/>
+  </g>
+</svg>
